@@ -1,0 +1,51 @@
+body {
+    margin: 0 !important;
+    background: #f5f5f5;
+}
+
+.ant-list .ant-list-item .ant-list-item-meta .ant-list-item-meta-title {
+    line-height: 1;
+    margin-top: 0px;
+}
+
+.ant-list .ant-list-item .ant-list-item-action {
+    margin-inline-start: 5px;
+}
+
+.homepage-hero {
+    background-image: url("../images/background.jpg");
+    background-color: #555;
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.homepage-hero .homepage-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.homepage-hero .homepage-hero-content h1 {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: #5cebdf;
+    padding: 10px;
+}
+
+.homepage-hero .homepage-hero-content span {
+    font-size: 12px;
+    background-color: #5cebdf;
+    padding: 10px;
+}
+
+.ant-menu-dark.ant-menu-horizontal >.ant-menu-item-selected {
+    background-color: #5cebdf;
+    color: #000;
+}
