@@ -24,6 +24,7 @@ body {
 }
 
 .homepage-hero .homepage-hero-content {
+    background-color: #000000;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,17 +36,20 @@ body {
     font-size: 30px;
     margin-top: 0px;
     margin-bottom: 20px;
-    background-color: #5cebdf;
+   
+    color: white!important;
+
     padding: 10px;
 }
 
 .homepage-hero .homepage-hero-content span {
     font-size: 12px;
-    background-color: #5cebdf;
+    
+    color: white !important;
     padding: 10px;
 }
 
 .ant-menu-dark.ant-menu-horizontal >.ant-menu-item-selected {
-    background-color: #5cebdf;
-    color: #000;
+    background-color: black;
+    color: #fffff;
 }

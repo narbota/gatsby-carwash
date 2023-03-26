@@ -1,5 +1,5 @@
 import React from "react";
-import { Breadcrumb, Layout, Menu, theme } from "antd";
+import { Layout, Menu, theme } from "antd";
 import "../styles/global.css";
 import { navigate } from "gatsby";
 
@@ -31,24 +31,25 @@ const LayoutWrapper = ({ children, activeKey }) => {
             navigate("/");
           }}
         >
-          𐂂 Netlify's Coffee
+         🚗 Netlify's Carwash
         </div>
         <Menu
           theme="dark"
           mode="horizontal"
           defaultSelectedKeys={[activeKey]}
           items={[
-            { key: "products", label: "Products" },
-            { key: "blog", label: "Blog" },
+            { key: "products", label: "Wash Packages" },
+            { key: "blog", label: "Car Talk" },
           ]}
           onClick={(event) => goToPage(event.key)}
         />
       </Header>
       <Content className="site-layout" style={{ padding: "20px 50px" }}>
         {children}
+       
       </Content>
       <Footer style={{ textAlign: "center" }}>
-        Built with ☕️ by Netlify 2023
+        Built with 🫧 by Netlify SE Team 2023
       </Footer>
     </Layout>
   );

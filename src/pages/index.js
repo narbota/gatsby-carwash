@@ -9,15 +9,17 @@ const IndexPage = () => {
   const demo = [
     {
       id: 1,
-      name: "Contentful",
+      name: "Car Talk",
       goTo: "/blog",
+      image: "https://images.unsplash.com/photo-1508974239320-0a029497e820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
       description:
-        "Contentful is a content management system (CMS) for digital teams to create, manage, and distribute content to any platform.",
+        "Visit our blog for info about everthing Cars! *Powered by Contentful CMS",
     },
     {
       id: 2,
       name: "BigCommerce",
       goTo: "/products",
+      image: "https://images.unsplash.com/photo-1505761283622-7fe50142c97f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80",
       description:
         "BigCommerce is a SaaS ecommerce platform for online stores and retail point-of-sale systems. It is designed for businesses of all sizes.",
     },
@@ -25,6 +27,7 @@ const IndexPage = () => {
       id: 3,
       name: "Netlify",
       goTo: "/netlify",
+      image: "https://images.unsplash.com/photo-1503415508474-578bd9bb9dd0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
       description:
         "See how Netlify can help you build, deploy, and manage your web projects.",
     },
@@ -32,6 +35,7 @@ const IndexPage = () => {
       id: 4,
       name: "Gatsby",
       goTo: "/gatsby",
+      image: "https://images.unsplash.com/photo-1605164599894-ca98960d41b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
       description:
         "Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps.",
     },
@@ -41,8 +45,8 @@ const IndexPage = () => {
     <Layout activeKey={"index"}>
       <div className="homepage-hero">
         <div class="homepage-hero-content">
-          <h1>𐂂 Netlify's Coffee</h1>
-          <span>A demo of Netlify with Contentful + BigCommerce + Gatsby</span>
+          <h1> 🚗 Netlify Carwash 🚗</h1>
+          <span>🫧🫧🫧A demo of Netlify with Contentful + Gatsby🫧🫧🫧</span>
         </div>
       </div>
 
@@ -53,6 +57,7 @@ const IndexPage = () => {
         renderItem={(item) => (
           <List.Item>
             <Card
+              cover={<img alt="example" src={item.image} />}
               hoverable
               actions={[
                 <Button
@@ -81,4 +86,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>🫧Car wash🫧</title>;
