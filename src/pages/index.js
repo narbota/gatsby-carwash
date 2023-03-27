@@ -46,7 +46,7 @@ const IndexPage = () => {
       <div className="homepage-hero">
         <div class="homepage-hero-content">
           <h1> 🚗 Netlify Carwash 🚗</h1>
-          <span>🫧🫧🫧A demo of Netlify with Contentful + Gatsby🫧🫧🫧</span>
+          <span>🫧🫧🫧A demo of Contentful + Gatsby🫧🫧🫧</span>
         </div>
       </div>
 
