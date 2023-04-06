@@ -28,3 +28,7 @@ path = "/greeting"
 [[edge_functions]]
 function = "bored-api"
 path = "/board"
+
+[[edge_functions]]
+function = "geo-location"
+path = "/local"
