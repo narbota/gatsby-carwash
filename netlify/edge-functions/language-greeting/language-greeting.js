@@ -4,13 +4,14 @@ export default async (request, context) => {
     US: "Howdy y'all!",
     GB: 'How do you do?',
     AU: "G'day, mate!",
-    ZA: "Howdy, partner!"
+    ZA: "Howdy, partner!",
+    FR: "Bonjour!",
   }
 
   const countryCode = context.geo?.country?.code || 'UNKNOWN'
   const countryName = context.geo?.country?.name || 'somewhere in the world'
 
-  return new Response(`At Netlify CarWash, We proudly serve customers from ${countryName} is: ${translations[countryCode]}`, {
+  return new Response(`At Netlify CarWash, We proudly serve customers from ${countryName}.  ${translations[countryCode]}!`, {
     headers: { 'content-type': 'text/html' },
   })
 }
