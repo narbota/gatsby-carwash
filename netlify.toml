@@ -37,4 +37,4 @@ path = "/local"
 
 [[edge_functions]]
 function = "language-greeting"
-path = "/greeting"
+path = "/welcome"
