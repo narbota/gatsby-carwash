@@ -1,11 +1,28 @@
 import { navigate } from "gatsby";
-import * as React from "react";
+import React, {useEffect, useState} from "react";
 import Layout from "../components/layout";
 import { List, Card, Button } from "antd";
+
 
 const { Meta } = Card;
 
 const IndexPage = () => {
+  const [greeting, setGreeting] = useState('');
+  useEffect(() => {
+    // Fetch the response from the edge function
+    fetch('https://example.com/your-edge-function-url') // Replace with the actual URL of your edge function endpoint
+      .then(response => response.text())
+      .then(data => {
+        // Update the state with the response data
+        setGreeting(data);
+      })
+      .catch(error => {
+        // Handle any errors that may occur during the request
+        console.error(error);
+      });
+  }, []); // Empty dependency array to only run the effect once, similar to componentDidMount
+
+  
   const demo = [
     {
       id: 1,
@@ -40,6 +57,7 @@ const IndexPage = () => {
         "Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps.",
     },
   ];
+  const Greeting = "Welcome to Netlify Carwash!";
 
   return (
     <Layout activeKey={"index"}>
@@ -47,6 +65,7 @@ const IndexPage = () => {
         <div class="homepage-hero-content">
           <h1> 🚗 Netlify Carwash 🚗</h1>
           <span>🫧🫧🫧A demo of Contentful + Gatsby🫧🫧🫧</span>
+          <h1>{Greeting}</h1>
         </div>
       </div>
 

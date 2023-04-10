@@ -6,6 +6,7 @@ import { navigate } from "gatsby";
 const { Header, Content, Footer } = Layout;
 
 const LayoutWrapper = ({ children, activeKey }) => {
+  
   const {
     token: { colorBgContainer },
   } = theme.useToken();

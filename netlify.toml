@@ -32,3 +32,9 @@ path = "/board"
 [[edge_functions]]
 function = "geo-location"
 path = "/local"
+
+
+
+[[edge_functions]]
+function = "language-greeting"
+path = "/greeting"
