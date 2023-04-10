@@ -4,7 +4,8 @@ export default async (request, context) => {
     US: "Howdy y'all!",
     GB: 'How do you do?',
     AU: "G'day, mate!",
-    ZA: "Howdy, partner!"
+    ZA: "Howdy, partner!",
+    FR: "Bonjour!"
   }
 
   const countryCode = context.geo?.country?.code || 'UNKNOWN'
