@@ -10,7 +10,7 @@ const IndexPage = () => {
   const [greeting, setGreeting] = useState('');
   useEffect(() => {
     // Fetch the response from the edge function
-    fetch('https://example.com/your-edge-function-url') // Replace with the actual URL of your edge function endpoint
+    fetch('https://main--fancy-halva-49e773.netlify.app/welcome') // Replace with the actual URL of your edge function endpoint
       .then(response => response.text())
       .then(data => {
         // Update the state with the response data
@@ -57,7 +57,7 @@ const IndexPage = () => {
         "Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps.",
     },
   ];
-  const Greeting = "Welcome to Netlify Carwash!";
+  
 
   return (
     <Layout activeKey={"index"}>
@@ -65,7 +65,7 @@ const IndexPage = () => {
         <div class="homepage-hero-content">
           <h1> 🚗 Netlify Carwash 🚗</h1>
           <span>🫧🫧🫧A demo of Contentful + Gatsby🫧🫧🫧</span>
-          <h1>{Greeting}</h1>
+          <h1>{greeting}</h1>
         </div>
       </div>
 
