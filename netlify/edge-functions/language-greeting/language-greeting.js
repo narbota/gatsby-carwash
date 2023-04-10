@@ -12,7 +12,7 @@ export default async (request, context) => {
   const countryCode = context.geo?.country?.code || 'UNKNOWN'
   const countryName = context.geo?.country?.name || 'somewhere in the world'
 
-  return new Response(`At Netlify CarWash, We proudly serve customers from ${countryName}.  ${translations[countryCode]}!`, {
+  return new Response(`Proudly serving customers in ${countryName}.  ${translations[countryCode]}!`, {
     headers: { 'content-type': 'text/html' },
   })
 }
