@@ -32,7 +32,7 @@ body {
     text-align: center;
 }
 
-.homepage-hero .homepage-hero-content h1 h2 {
+.homepage-hero .homepage-hero-content h1{
     font-size: 30px;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -42,7 +42,7 @@ body {
     padding: 10px;
 }
 
-.homepage-hero .homepage-hero-content span h2 {
+.homepage-hero .homepage-hero-content span {
     font-size: 12px;
     
     color: white !important;
