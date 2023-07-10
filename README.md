@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  This is a Gatsby, Big Commerce, Contentful and Stackbit project.
 </h1>
 
 ## 🚀 Quick start
